@@ -1,0 +1,149 @@
+body {
+  margin: 0; }
+
+.page {
+  background: #F3F4F5;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto; }
+  .page nav {
+    height: 2.4rem;
+    background: #FFFFFF;
+    white-space: nowrap;
+    overflow: auto;
+    font-size: 0; }
+    .page nav a {
+      text-decoration: none;
+      text-align: center;
+      margin: 0.5333333333rem 4% 0.4266666667rem;
+      width: 10.19%;
+      display: inline-block; }
+      .page nav a img {
+        width: 0.9066666667rem;
+        height: 0.9066666667rem;
+        border-radius: 50%; }
+      .page nav a h2 {
+        font-family: PingFangSC-Regular;
+        font-size: 0.32rem;
+        color: #4A4A4A;
+        letter-spacing: 0.31px;
+        font-weight: normal;
+        margin: 0; }
+  .page .recommend {
+    height: 4.9066666667rem;
+    margin-top: 0.2666666667rem;
+    background: #FFFFFF; }
+    .page .recommend h2 {
+      font-family: PingFangSC-Regular;
+      font-size: 0.4266666667rem;
+      color: #333333;
+      letter-spacing: 0.08rem;
+      font-weight: normal;
+      line-height: 1.1733333333rem;
+      text-align: center;
+      margin: 0; }
+    .page .recommend .slide-wrapper {
+      white-space: nowrap;
+      overflow: auto;
+      font-size: 0; }
+      .page .recommend .slide-wrapper a {
+        display: inline-block;
+        text-decoration: none;
+        width: 4.5066666667rem;
+        height: 3.4666666667rem;
+        position: relative;
+        margin-right: 0.1333333333rem; }
+        .page .recommend .slide-wrapper a .sup-txt {
+          font-family: PingFangSC-Regular;
+          font-size: 0.32rem;
+          line-height: 0.4533333333rem;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          position: absolute;
+          right: 0.1066666667rem; }
+        .page .recommend .slide-wrapper a img {
+          width: 4.5066666667rem;
+          height: 2.4rem; }
+        .page .recommend .slide-wrapper a .sub-txt {
+          font-family: PingFangSC-Regular;
+          font-size: 0.32rem;
+          line-height: 0.4533333333rem;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          position: absolute;
+          left: 25px;
+          top: 68px; }
+        .page .recommend .slide-wrapper a h4 {
+          font-family: PingFangSC-Regular;
+          font-size: 0.32rem;
+          line-height: 0.4533333333rem;
+          font-weight: normal;
+          color: #333333;
+          letter-spacing: 0;
+          margin: 0; }
+        .page .recommend .slide-wrapper a .album-or-music {
+          font-family: PingFangSC-Regular;
+          font-size: 0.32rem;
+          line-height: 0.4533333333rem;
+          color: #999999;
+          letter-spacing: 0;
+          position: absolute; }
+  .page .daily {
+    margin-top: 0.2666666667rem;
+    background: #FFFFFF;
+    width: 100%; }
+    .page .daily h3 {
+      font-family: PingFangSC-Regular;
+      font-size: 0.4266666667rem;
+      color: #333333;
+      letter-spacing: 3px;
+      line-height: 0.9333333333rem;
+      margin: 0;
+      text-align: center;
+      font-weight: normal; }
+    .page .daily a {
+      text-decoration: none;
+      display: inline-block;
+      width: 100%; }
+      .page .daily a:nth-last-of-type(1) .daily-wrap {
+        border: none; }
+      .page .daily a img {
+        width: 1.7333333333rem;
+        height: 1.7333333333rem;
+        margin: 0.52rem 0.2666666667rem 0 0.4rem;
+        float: left; }
+      .page .daily a .daily-wrap {
+        margin: 0.52rem 0 0 2.4rem;
+        padding: 0 0.5866666667rem 0.5333333333rem 0;
+        border-bottom: 0.0133333333rem solid #E8E8E8;
+        min-height: 77px; }
+        .page .daily a .daily-wrap h4 {
+          font-family: PingFangSC-Regular;
+          font-size: 16px;
+          color: #333333;
+          letter-spacing: 0;
+          font-weight: normal;
+          margin: 0;
+          line-height: 22px; }
+        .page .daily a .daily-wrap .induction {
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          line-height: 20px;
+          color: #999999;
+          letter-spacing: 0;
+          margin: 0;
+          margin-top: 0.1333333333rem;
+          white-space: nowrap;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .page .daily a .daily-wrap .album-or-music {
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          line-height: 17px;
+          color: #999999;
+          letter-spacing: 0;
+          margin: 0;
+          margin-top: 0.1066666667rem; }
+
+/*# sourceMappingURL=style.css.map */

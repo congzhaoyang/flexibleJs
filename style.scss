@@ -1,0 +1,209 @@
+
+$font_size: 37.5px;
+
+@function px2rem($pixels) {
+    @return $pixels / $font_size + rem;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    background: #F3F4F5;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+
+    nav {
+        height: px2rem(90px);
+        //display: flex;
+        //justify-content: space-around;
+        background: #FFFFFF;
+        white-space: nowrap;
+        overflow: auto;
+        font-size: 0;
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            margin: px2rem(20px) 4% px2rem(16px);
+            width: 10.19%;
+            display: inline-block;
+            
+            img {
+                width: px2rem(34px);
+                height: px2rem(34px);
+                //margin-top: px2rem(20px);
+                border-radius: 50%;
+            }
+
+            h2 {
+                font-family: PingFangSC-Regular;
+                font-size: px2rem(12px);
+                color: #4A4A4A;
+                letter-spacing: 0.31px;
+                //line-height: px2rem(17px);
+                font-weight: normal;
+                margin: 0;
+                // margin-: px2rem(4px);
+            }
+        }
+    }
+    
+    .recommend {
+        height: px2rem(184px);
+        margin-top: px2rem(10px);
+        background: #FFFFFF;
+
+        h2 {
+            font-family: PingFangSC-Regular;
+            font-size: px2rem(16px);
+            color: #333333;
+            letter-spacing: px2rem(3px);   
+            font-weight: normal;
+            line-height: px2rem(44px);
+            text-align: center;  
+            margin: 0;       
+        }
+
+        .slide-wrapper {
+            white-space: nowrap;
+            overflow: auto;
+            font-size: 0;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: px2rem(169px);
+                height: px2rem(130px);
+                position: relative;
+                margin-right: px2rem(5px);
+
+                .sup-txt {
+                    font-family: PingFangSC-Regular;
+                    font-size: px2rem(12px);
+                    line-height: px2rem(17px);
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    position: absolute;
+                    right: px2rem(4px);
+                }
+
+                img {
+                    width: px2rem(169px);
+                    height: px2rem(90px);
+                }
+
+                .sub-txt {
+                    font-family: PingFangSC-Regular;
+                    font-size: px2rem(12px);
+                    line-height: px2rem(17px);
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    position: absolute;
+                    left: 25px;
+                    top: 68px
+                }
+
+                h4 {
+                    font-family: PingFangSC-Regular;
+                    font-size: px2rem(12px);
+                    line-height: px2rem(17px);
+                    font-weight: normal;
+                    color: #333333;
+                    letter-spacing: 0;
+                    margin: 0;
+                }
+
+                .album-or-music {
+                    font-family: PingFangSC-Regular;
+                    font-size: px2rem(12px);
+                    line-height: px2rem(17px);
+                    color: #999999;
+                    letter-spacing: 0;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .daily {
+        margin-top: px2rem(10px);
+        background: #FFFFFF;
+        width: 100%;
+
+        h3 {
+            font-family: PingFangSC-Regular;
+            font-size: px2rem(16px);
+            color: #333333;
+            letter-spacing: 3px;
+            line-height: px2rem(35px);
+            margin: 0;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            //position: relative;
+            //height: 108px;
+            &:nth-last-of-type(1) {
+                .daily-wrap {
+                    border: none;
+                }
+            }
+
+            img {
+                width: px2rem(65px);
+                height: px2rem(65px);
+                margin: px2rem(19.5px) px2rem(10px) 0 px2rem(15px);
+                float: left;
+            }
+
+            .daily-wrap {
+                margin: px2rem(19.5px) 0 0 px2rem(90px);
+                padding: 0 px2rem(22px) px2rem(20px) 0;
+                border-bottom: px2rem(0.5px) solid #E8E8E8;
+                min-height: 77px;
+                //position: relative;
+
+                h4 {
+                    font-family: PingFangSC-Regular;
+                    font-size: 16px;
+                    color: #333333;
+                    letter-spacing: 0;
+                    font-weight: normal;
+                    margin: 0;
+                    line-height: 22px;
+                }
+
+                .induction {
+                    font-family: PingFangSC-Regular;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #999999;
+                    letter-spacing: 0;
+                    margin: 0;
+                    margin-top: px2rem(5px);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                } 
+
+                .album-or-music {
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    line-height: 17px;
+                    color: #999999;
+                    letter-spacing: 0;
+                    margin: 0;
+                    margin-top: px2rem(4px);
+                }
+            }
+        }
+    }
+}

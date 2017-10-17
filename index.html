@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>听单</title>
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script> -->
+    <!-- <script src="./node_modules/amfe-flexible/index.js"></script> -->
+    <script>   
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>= 640){
+                        docEl.style.fontSize = '64px';
+                    }else{
+                        docEl.style.fontSize = 75 * (clientWidth / 750) + 'px';
+                    }
+                };
+    
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var navBar = $('.navBar')
+        var navBarA = $('.navBar > a')
+        console.log(navBarA.length)
+        console.log(navBar)
+        //alert(navBar.children().length)
+        $('nav').css('background', 'blue')
+        console.log($('nav').html())
+        if(navBar.children.length >=6) {
+            navBarA.css('width', '10.19%')
+        } else {
+            navBarA.css('width', '11%')
+        }
+    </script>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <nav class="navBar">
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="知识">
+                <h2>知识</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="儿童">
+                <h2>儿童</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="休闲">
+                <h2>休闲</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="知识">
+                <h2>生活</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="有声书">
+                <h2>有声书</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="有声书">
+                <h2>有声书</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="有声书">
+                <h2>有声书</h2>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/34x34" alt="有声书">
+                <h2>有声书</h2>
+            </a>
+        </nav>
+
+        <section class="recommend">
+            <h2>精选推荐</h2>
+            <div class="slide-wrapper">
+                <a href="">
+                    <span class="sup-txt">1009次阅读</span>
+                    <img src="http://via.placeholder.com/169x90" alt="">
+                    <span class="sub-txt">教育</span>
+                    <h4>人类思维的宇宙</h4>
+                    <span class="album-or-music">13张专辑</span>
+                </a>
+                <a href="">
+                    <span class="sup-txt">1009次阅读</span>
+                    <img src="http://via.placeholder.com/169x90" alt="">
+                    <span class="sub-txt">教育</span>
+                    <h4>人类思维的宇宙</h4>
+                    <span class="album-or-music">13张专辑</span>
+                </a>
+                <a href="">
+                    <span class="sup-txt">1009次阅读</span>
+                    <img src="http://via.placeholder.com/169x90" alt="">
+                    <span class="sub-txt">教育</span>
+                    <h4>人类思维的宇宙</h4>
+                    <span class="album-or-music">13张专辑</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="daily">
+            <h3>2017.09.22</h3>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="daily">
+            <h3>2017.09.22</h3>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+            <a href="">
+                <img src="http://via.placeholder.com/65x65" alt="">
+                <div class="daily-wrap">
+                    <h4>男人唱歌骚柔起来，真没女人的事了！</h4>
+                    <p class="induction">他们或许雌雄莫辨，让你们下意识分不清他们或许雌雄莫辨，让你们下意识分不清</p>
+                    <p class="album-or-music">13张专辑</p>
+                </div>
+            </a>
+        </section>
+    </div>
+</body>
+</html>
