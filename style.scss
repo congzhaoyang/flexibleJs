@@ -133,7 +133,7 @@ body {
         background: #FFFFFF;
         width: 100%;
 
-        h3 {
+        time {
             font-family: PingFangSC-Regular;
             font-size: px2rem(16px);
             color: #333333;
@@ -142,6 +142,7 @@ body {
             margin: 0;
             text-align: center;
             font-weight: normal;
+            display: block;
         }
 
         a {

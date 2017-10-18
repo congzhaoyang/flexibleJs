@@ -92,7 +92,7 @@ body {
     margin-top: 0.2666666667rem;
     background: #FFFFFF;
     width: 100%; }
-    .page .daily h3 {
+    .page .daily time {
       font-family: PingFangSC-Regular;
       font-size: 0.4266666667rem;
       color: #333333;
@@ -100,7 +100,8 @@ body {
       line-height: 0.9333333333rem;
       margin: 0;
       text-align: center;
-      font-weight: normal; }
+      font-weight: normal;
+      display: block; }
     .page .daily a {
       text-decoration: none;
       display: inline-block;
